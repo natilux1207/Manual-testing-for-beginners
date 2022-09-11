@@ -7,6 +7,12 @@
     <title>Manual testing</title>
 </head>
 <body>
+    <header>
+        <h5>About me</h5>
+        <h5>Learn Manual Testing</h5>
+        <h5>Practical exercises</h5>
+    </header>
+    <section>
     <h1>MANUAL TESTING COURSE</h1>
     <h2>From beginner to advanced</h2>
     <h3>Preliminary concepts</h3>
@@ -64,13 +70,156 @@
         works correctly (as expected) or not.
         </p>
 <br>
-<br>
 <p>Now that we have an idea about some preliminary notions about testing, let's start making the disctinction 
     between the two main types of software testing:
-    <ol>
-        <li>Manual Testing</li>
-        <li>Automation Testing</li>
-    </ol>
 </p>
+    <ol>
+        <li>Manual Testing: it is a type of software testing in which test cases are executed manually 
+            by a tester without using any automated tools. The purpose of Manual Testing is to identify 
+            the bugs, issues, and defects in the software application. Manual software testing is the most 
+            primitive technique of all testing types and it helps to find critical bugs in the software 
+            application.
+            Any new application must be manually tested before its testing can be automated. 
+            Manual Software Testing requires more effort but is necessary to check automation feasibility. 
+            Manual Testing concepts does not require knowledge of any testing tool. One of the Software 
+            Testing Fundamental is “100% Automation is not possible“. This makes Manual Testing imperative. 
+            Some of the types of testing which are commonly manually executed are related to the user interface, since
+            it is necessary to count on an expert eye to detect bugs in the system's layout. It can also be necessary
+            in exploratory testing, in which case the tester does not follow test cases as a guide to execute the tests,  
+            but this kind of testing allows you to think outside the box and come up with use cases that might 
+            not be covered in a test case.</li>
+        <li>Automation Testing: Automation testing is the process of testing software and other tech products 
+            to ensure it meets strict requirements. Essentially, it's a test to double-check that the 
+            equipment or software does exactly what it was designed to do. 
+            It is required when you want to run the same test cases across multiple machines at the same time.
+             Automation testing is also a good way to avoid human error in your testing. With automation, you 
+             can be sure that all tests are exactly the same. For example: load tests, database testing, performance tests, 
+             among others. </li>
+    </ol>
+    <br>
+<p>Both kinds of testing are indispensable to guarantee a piece's quality. It is not that a tester can choose 
+    between one or the other. There will always be the need of both types of testing. Moreover, ever if automation
+    can help you make testing more efficient and effective, not all software testing can be automated, and 
+    sometimes manual testing will be more appropriate in some instances. 
+    However, let's focus on "Manual testing" first. I will share with you all my knowledge about the topic and Some
+    practical examples of my experience as a Manual QA Analyst. I hope this can help you as a guide if you 
+    are interested in becoming a manual QA Analyst. If your intention is just to enrich yourself with extra knowledge
+    just because you found this text catching, I hope you also enjoy it. 
+</p>
+</section>
+<section>
+<h3>Manual testing</h3>
+<h4>SECTION 1: MODELS OF SDLC</h4>
+<p>SDLC, or Software Development Life Cycle, is a set of steps used to create software applications. These 
+    steps divide the development process into tasks that can then be assigned, completed, and measured. This structure
+    is followed by a development teamwithin the software organization. It aims to produce quality software that
+    exceeds costumer expectations, meets deadlines and costs estimates.
+    There are different models in which this process can be applied, but the three most widely used are:</p>
+<ul>
+    <li>Waterfall Model: It is also referred to as a linear-sequential life cycle model. In this model, each 
+        phase must be completed before the next phase can begin and there is no overlapping in the phases.
+        This Model illustrates the software development process in a linear sequential flow. This means that
+        any phase in the development process begins only if the previous phase is complete. <br>
+        The sequential phases in the Waterfall model are: Requirements, System design, Implementation, 
+        Integration and Testing, Deployment, Maintenance.</li>
+            <img src="waterfall-model.jpg">
+    <li>V-model: The V-model is an SDLC model where execution of processes happens in a sequential manner in 
+        a V-shape. It is also known as Verification and Validation model. The V-Model is an extension of the 
+        waterfall model and is based on the association of a testing phase for each corresponding development 
+        stage. This means that for every single phase in the development cycle, there is a directly associated
+         testing phase. This is a highly-disciplined model and the next phase starts only after completion of 
+         the previous phase.</li>
+            <img src="v-model.jpg">
+    <li>Agile model: Agile SDLC model is a combination of iterative and incremental process models with focus 
+        on process adaptability and customer satisfaction by rapid delivery of working software product.
+         Agile Methods break the product into small incremental builds. These builds are provided in iterations.
+        Each iteration typically lasts from about one to three weeks. Every iteration involves cross functional 
+        teams working simultaneously on various areas. This is the most widely used model in companies at the moment.</li>
+            <img src="sdlc_agile_model.jpg">
+</ul>
+<p>It's typically divided into six to eight steps: Planning, Requirements, Design, Build, Document, Test, 
+    Deploy, Maintain. Some project managers will combine, split, or omit steps, depending on the project's scope.
+    These are the core components recommended for all software development projects. SDLC is a way to measure and 
+    improve the development process. It allows a fine-grain analysis of each step of the process. This, in turn, 
+    helps companies maximize efficiency at each stage. As computing power increases, it places a higher demand on 
+    software and developers. Companies must reduce costs, deliver software faster, and meet or exceed their 
+    customers' needs. SDLC helps achieve these goals by identifying inefficiencies and higher costs and fixing
+    them to run smoothly.
+    <img src="SDLC.png">
+</p>
+<p>Let's unfold these phases of the SDLC so as to analyse them in detail:</p>
+<ol>
+    <li>Planning: In the Planning phase, project leaders evaluate the terms of the project. This includes 
+        calculating labor and material costs, creating a timetable with target goals, and creating the 
+        project's teams and leadership structure. Planning can also include feedback from stakeholders. 
+        Stakeholders are anyone who stands to benefit from the application. Try to get feedback from potential
+        customers, developers, subject matter experts, and sales reps.
+        Planning should clearly define the scope and purpose of the application. It plots the course and provisions
+        the team to effectively create the software. It also sets boundaries to help keep the project from 
+        expanding or shifting from its original purpose.</li>
+    <li>Define Requirements: It is considered part of planning to determine what the application is supposed to
+         do and its requirements. For example, a social media application would require the ability to connect 
+         with a friend. An inventory program might require a search feature.
+        Requirements also include defining the resources needed to build the project. For example, a team might
+         develop software to control a custom manufacturing machine. The machine is a requirement in the process.</li>
+    <li>Design and Prototyping: The Design phase models the way a software application will work. Some aspects of
+         the design include:<br>
+
+        <b>Architecture</b>: Specifies programming language, industry practices, overall design, and use of any templates or boilerplate<br>
+        <b>User Interface</b>: Defines the ways customers interact with the software, and how the software responds to input<br>
+        <b>Platforms</b>: Defines the platforms on which the software will run, such as Apple, Android, Windows version, Linux, 
+        or even gaming consoles<br>
+        <b>Programming</b>: Not just the programming language, but including methods of solving problems and performing 
+        tasks in the application<br>
+        <b>Communications</b>: Defines the methods that the application can communicate with other assets, such as a central
+         server or other instances of the application<br>
+        <b>Security</b>: Defines the measures taken to secure the application, and may include SSL traffic encryption, password protection, 
+        and secure storage of user credentials<br><br>
+        
+        Prototyping can be a part of the Design phase. A prototype is like one of the early versions of software 
+        in the Iterative software development model. It demonstrates a basic idea of how the application looks and
+        works. This “hands-on” design can be shown to stakeholders. Use feedback o improve the application. It's
+        less expensive to change the Prototype phase than to rewrite code to make a change in the Development 
+        phase.</li>
+    <li>Software Development: This is the actual writing of the program. A small project might be written by a
+        single developer, while a large project might be broken up and worked by several teams. Use an Access 
+        Control or Source Code Management application in this phase. These systems help developers track changes
+        to the code. They also help ensure compatibility between different team projects and to make sure target 
+        goals are being met.<br>
+        The coding process includes many other tasks. Many developers need to brush up on skills or work as a team. 
+        Finding and fixing errors and glitches is critical. Tasks often hold up the development process, such as 
+        waiting for test results or compiling code so an application can run. SDLC can anticipate these delays 
+        so that developers can be tasked with other duties.<br>
+        Software developers appreciate instructions and explanations. Documentation can be a formal process, 
+        including wiring a user guide for the application. It can also be informal, like comments in the source code
+        that explain why a developer used a certain procedure. Even companies that strive to create software that's
+        easy and intuitive benefit from the documentation.<br>
+        Documentation can be a quick guided tour of the application's basic features that display on the first 
+        launch. It can be video tutorials for complex tasks. Written documentation like user guides, troubleshooting
+        guides, and FAQ's help users solve problems or technical questions.</li>
+    <li>Testing: It's critical to test an application before making it available to users. Much of the testing can 
+        be automated, like security testing. Other testing can only be done in a specific environment (consider 
+        creating a simulated production environment for complex deployments). Testing should ensure that each function
+        works correctly. Different parts of the application should also be tested to work seamlessly together—performance
+        test, to reduce any hangs or lags in processing. The testing phase helps reduce the number of bugs and glitches
+        that users encounter. This leads to a higher user satisfaction and a better usage rate.</li>
+    <li>Deployment: In the deployment phase, the application is made available to users. Many companies prefer to 
+        automate the deployment phase. This can be as simple as a payment portal and download link on the company 
+        website. It could also be downloading an application on a smartphone.<br>
+        Deployment can also be complex. Upgrading a company-wide database to a newly-developed application is one 
+        example. Because there are several other systems used by the database, integrating the upgrade can take more
+        time and effort.</li>
+    <li>Operations and Maintenance: At this point, the development cycle is almost finished. The application is done
+        and being used in the field. The Operation and Maintenance phase is still important, though. In this phase, 
+        users discover bugs that weren't found during testing. These errors need to be resolved, which can spawn 
+        new development cycles.<br>
+        In addition to bug fixes, models like Iterative development plan additional features in future releases. For 
+        each new release, a new Development Cycle can be launched.</li>
+    
+</ol>
+</section>
+<section>
+    <h3>TESTING PHASE</h3>
+</section>
 </body>
 </html>
